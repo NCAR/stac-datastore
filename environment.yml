@@ -1,0 +1,21 @@
+name: stac-dev
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - cf_xarray
+  - git
+  - intake
+  - intake-esm
+  - jupyterlab
+  - netcdf4
+  - pandas
+  - pip
+  - pydantic
+  - pystac
+  - python=3.9
+  - xarray
+  - zarr
+  - pip:
+      - git+https://github.com/TomAugspurger/xstac
+      - git+https://github.com/aulemahal/xarray.git@calendar-utils
