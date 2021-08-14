@@ -19,3 +19,4 @@ dependencies:
   - pip:
       - git+https://github.com/TomAugspurger/xstac
       - git+https://github.com/aulemahal/xarray.git@calendar-utils
+      - git+https://github.com/NCAR/ecgtools.git@main
