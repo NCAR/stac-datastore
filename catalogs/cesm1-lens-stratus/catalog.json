@@ -1,0 +1,2169 @@
+{
+  "stac_version": "1.0.0",
+  "stac_extensions": [],
+  "type": "Catalog",
+  "id": "CESM1-large-ensemble",
+  "title": "CESM1-LE",
+  "description": "STAC catalog for CESM1-LE data stored in NCAR stratus object storage",
+  "links": [
+    {
+      "href": "catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    },
+    {
+      "href": "https://www.cesm.ucar.edu/models/cesm2/copyright.html",
+      "type": "text/html",
+      "rel": "license",
+      "title": "CESM2 Copyright & Terms of Use"
+    },
+    {
+      "href": "atm/daily/20C/FLNS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/20C/FLNSC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/20C/FLUT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/20C/FSNS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/20C/FSNSC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/20C/FSNTOA.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/20C/ICEFRAC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/20C/LHFLX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/20C/PRECL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/20C/PRECSC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/20C/PRECSL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/20C/PRECT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/20C/PRECTMX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/20C/PSL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/20C/Q850.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/20C/SHFLX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/20C/TMQ.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/20C/TREFHT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/20C/TREFHTMN.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/20C/TREFHTMX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/20C/TS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/20C/UBOT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/20C/WSPDSRFAV.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/20C/Z500.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/HIST/FLNS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/HIST/FLNSC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/HIST/FLUT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/HIST/FSNS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/HIST/FSNSC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/HIST/FSNTOA.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/HIST/ICEFRAC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/HIST/LHFLX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/HIST/PRECL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/HIST/PRECSC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/HIST/PRECSL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/HIST/PRECT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/HIST/PRECTMX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/HIST/PSL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/HIST/Q850.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/HIST/SHFLX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/HIST/TMQ.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/HIST/TREFHT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/HIST/TREFHTMN.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/HIST/TREFHTMX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/HIST/TS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/HIST/UBOT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/HIST/WSPDSRFAV.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/HIST/Z500.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/RCP85/FLNS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/RCP85/FLNSC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/RCP85/FLUT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/RCP85/FSNS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/RCP85/FSNSC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/RCP85/FSNTOA.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/RCP85/ICEFRAC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/RCP85/LHFLX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/RCP85/PRECL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/RCP85/PRECSC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/RCP85/PRECSL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/RCP85/PRECT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/RCP85/PRECTMX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/RCP85/PSL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/RCP85/Q850.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/RCP85/SHFLX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/RCP85/TMQ.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/RCP85/TREFHT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/RCP85/TREFHTMN.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/RCP85/TREFHTMX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/RCP85/TS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/RCP85/UBOT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/RCP85/WSPDSRFAV.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/daily/RCP85/Z500.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-1990-2005/20C/FLNS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-1990-2005/20C/FSNS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-1990-2005/20C/PRECT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-1990-2005/20C/PS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-1990-2005/20C/PSL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-1990-2005/20C/QREFHT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-1990-2005/20C/TREFHT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-1990-2005/20C/TS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-1990-2005/20C/V.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-2026-2035/RCP85/FLNS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-2026-2035/RCP85/FSNS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-2026-2035/RCP85/PRECT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-2026-2035/RCP85/PS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-2026-2035/RCP85/PSL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-2026-2035/RCP85/Q.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-2026-2035/RCP85/QREFHT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-2026-2035/RCP85/T.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-2026-2035/RCP85/TREFHT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-2026-2035/RCP85/TS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-2026-2035/RCP85/U.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-2026-2035/RCP85/V.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-2026-2035/RCP85/Z3.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-2071-2080/RCP85/FLNS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-2071-2080/RCP85/FSNS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-2071-2080/RCP85/PRECT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-2071-2080/RCP85/PS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-2071-2080/RCP85/PSL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-2071-2080/RCP85/QREFHT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-2071-2080/RCP85/TREFHT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-2071-2080/RCP85/TS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-2071-2080/RCP85/V.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/hourly6-2071-2080/RCP85/Z3.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C/FLNS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C/FLNSC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C/FLUT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C/FSNS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C/FSNSC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C/FSNTOA.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C/ICEFRAC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C/LHFLX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C/PRECC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C/PRECL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C/PRECSC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C/PRECSL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C/PSL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C/Q.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C/SHFLX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C/T.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C/TMQ.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C/TREFHT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C/TREFHTMN.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C/TREFHTMX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C/TS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C/U.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C/V.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C/Z3.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C_185001_191912/FLNS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C_185001_191912/FLNSC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C_185001_191912/FLUT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C_185001_191912/FSNS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C_185001_191912/FSNSC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C_185001_191912/FSNTOA.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C_185001_191912/ICEFRAC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C_185001_191912/LHFLX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C_185001_191912/PRECC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C_185001_191912/PRECL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C_185001_191912/PRECSC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C_185001_191912/PRECSL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C_185001_191912/PSL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C_185001_191912/Q.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C_185001_191912/SHFLX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C_185001_191912/T.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C_185001_191912/TMQ.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C_185001_191912/TREFHT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C_185001_191912/TREFHTMN.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C_185001_191912/TREFHTMX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C_185001_191912/TS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C_185001_191912/U.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C_185001_191912/V.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/20C_185001_191912/Z3.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/HIST/FLNS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/HIST/FLNSC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/HIST/FLUT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/HIST/FSNS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/HIST/FSNSC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/HIST/FSNTOA.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/HIST/ICEFRAC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/HIST/LHFLX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/HIST/PRECC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/HIST/PRECL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/HIST/PRECSC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/HIST/PRECSL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/HIST/PSL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/HIST/Q.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/HIST/SHFLX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/HIST/T.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/HIST/TMQ.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/HIST/TREFHT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/HIST/TREFHTMN.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/HIST/TREFHTMX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/HIST/TS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/HIST/U.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/HIST/Z3.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/RCP85/FLNS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/RCP85/FLNSC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/RCP85/FLUT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/RCP85/FSNS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/RCP85/FSNSC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/RCP85/FSNTOA.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/RCP85/ICEFRAC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/RCP85/LHFLX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/RCP85/PRECC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/RCP85/PRECL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/RCP85/PRECSC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/RCP85/PRECSL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/RCP85/PS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/RCP85/PSL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/RCP85/Q.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/RCP85/SHFLX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/RCP85/T.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/RCP85/TMQ.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/RCP85/TREFHT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/RCP85/TREFHTMN.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/RCP85/TREFHTMX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/RCP85/TS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/RCP85/U.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/RCP85/V.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "atm/monthly/RCP85/Z3.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ice_nh/daily/20C/aice_d.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ice_nh/daily/20C/hi_d.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ice_nh/daily/HIST/aice_d.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ice_nh/daily/HIST/hi_d.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ice_nh/daily/RCP85/aice_d.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ice_nh/daily/RCP85/hi_d.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ice_nh/monthly/20C/aice.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ice_nh/monthly/20C/hi.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ice_nh/monthly/HIST/aice.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ice_nh/monthly/HIST/hi.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ice_nh/monthly/RCP85/aice.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ice_nh/monthly/RCP85/hi.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ice_sh/daily/20C/aice_d.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ice_sh/daily/20C/hi_d.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ice_sh/daily/HIST/aice_d.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ice_sh/daily/HIST/hi_d.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ice_sh/daily/RCP85/aice_d.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ice_sh/daily/RCP85/hi_d.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ice_sh/monthly/20C/aice.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ice_sh/monthly/20C/hi.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ice_sh/monthly/HIST/aice.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ice_sh/monthly/HIST/hi.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ice_sh/monthly/RCP85/aice.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ice_sh/monthly/RCP85/hi.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/daily/20C/FSNO.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/daily/20C/H2OSNO.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/daily/20C/QRUNOFF.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/daily/20C/RAIN.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/daily/20C/SNOW.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/daily/20C/SOILWATER_10CM.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/daily/HIST/FSNO.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/daily/HIST/H2OSNO.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/daily/HIST/QRUNOFF.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/daily/HIST/RAIN.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/daily/HIST/SNOW.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/daily/HIST/SOILWATER_10CM.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/daily/RCP85/FSNO.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/daily/RCP85/H2OSNO.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/daily/RCP85/QRUNOFF.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/daily/RCP85/RAIN.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/daily/RCP85/SNOW.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/daily/RCP85/SOILWATER_10CM.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/monthly/20C/FSNO.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/monthly/20C/H2OSNO.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/monthly/20C/QRUNOFF.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/monthly/20C/RAIN.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/monthly/20C/SNOW.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/monthly/20C/SOILLIQ.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/monthly/20C/SOILWATER_10CM.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/monthly/HIST/FSNO.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/monthly/HIST/H2OSNO.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/monthly/HIST/QRUNOFF.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/monthly/HIST/RAIN.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/monthly/HIST/SNOW.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/monthly/HIST/SOILLIQ.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/monthly/HIST/SOILWATER_10CM.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/monthly/RCP85/FSNO.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/monthly/RCP85/H2OSNO.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/monthly/RCP85/QRUNOFF.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/monthly/RCP85/RAIN.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/monthly/RCP85/SNOW.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/monthly/RCP85/SOILLIQ.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "lnd/monthly/RCP85/SOILWATER_10CM.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/DIC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/DOC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/FW.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/HMXL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/O2.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/PD.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/QFLUX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/QSW_HBL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/QSW_HTP.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/RESID_S.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/RESID_T.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/SALT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/SFWF.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/SFWF_WRST.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/SHF.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/SHF_QSW.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/SSH.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/SST.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/TAUX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/TAUX2.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/TAUY.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/TAUY2.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/TEMP.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/UES.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/UET.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/UVEL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/VNS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/VNT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/VVEL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/WTS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/WTT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/20C/WVEL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/DIC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/DOC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/FW.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/HMXL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/O2.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/PD.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/QFLUX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/QSW_HBL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/QSW_HTP.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/RESID_S.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/SALT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/SFWF.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/SFWF_WRST.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/SHF.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/SHF_QSW.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/SSH.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/SST.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/TAUX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/TAUX2.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/TAUY.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/TAUY2.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/TEMP.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/UES.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/UET.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/UVEL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/VNS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/VNT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/VVEL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/WTS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/WTT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/HIST/WVEL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/DIC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/DOC.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/FW.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/HMXL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/O2.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/PD.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/QFLUX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/QSW_HBL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/QSW_HTP.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/RESID_S.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/RESID_T.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/SALT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/SFWF.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/SFWF_WRST.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/SHF.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/SHF_QSW.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/SSH.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/SST.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/TAUX.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/TAUX2.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/TAUY.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/TAUY2.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/TEMP.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/UES.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/UET.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/UVEL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/VNS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/VNT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/VVEL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/WTS.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/WTT.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    },
+    {
+      "href": "ocn/monthly/RCP85/WVEL.json",
+      "rel": "child",
+      "type": "application/json",
+      "roles": ["Collection"]
+    }
+  ]
+}

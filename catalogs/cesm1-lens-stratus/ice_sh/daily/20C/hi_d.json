@@ -1,0 +1,332 @@
+{
+  "type": "Collection",
+  "id": "CESM1LE-ice_sh-20C-daily-hi_d",
+  "stac_version": "1.0.0",
+  "description": "CESM1 Large Ensemble dataset",
+  "links": [
+    {
+      "rel": "RelType.ROOT",
+      "href": "../catalog.json",
+      "type": "MediaType.JSON"
+    },
+    {
+      "rel": "license",
+      "href": "https://www.cesm.ucar.edu/models/cesm2/copyright.html",
+      "type": "text/html",
+      "title": "CESM2 Copyright & Terms of Use"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v1.0.0/schema.json"
+  ],
+  "cube:dimensions": {
+    "time": {
+      "type": "temporal",
+      "description": "model time",
+      "extent": ["1920-01-02T00:00:00Z", "2006-01-01T00:00:00Z"]
+    }
+  },
+  "cube:variables": {
+    "ANGLE": {
+      "type": "data",
+      "description": "angle grid makes with latitude line on U grid",
+      "dimensions": ["nj", "ni", "time"],
+      "unit": "radians",
+      "shape": [76, 320, 31390],
+      "chunks": [76, 320, 31390],
+      "attrs": {
+        "long_name": "angle grid makes with latitude line on U grid",
+        "units": "radians"
+      }
+    },
+    "ANGLET": {
+      "type": "data",
+      "description": "angle grid makes with latitude line on T grid",
+      "dimensions": ["nj", "ni", "time"],
+      "unit": "radians",
+      "shape": [76, 320, 31390],
+      "chunks": [76, 320, 31390],
+      "attrs": {
+        "long_name": "angle grid makes with latitude line on T grid",
+        "units": "radians"
+      }
+    },
+    "HTE": {
+      "type": "data",
+      "description": "T cell width on East side",
+      "dimensions": ["nj", "ni", "time"],
+      "unit": "m",
+      "shape": [76, 320, 31390],
+      "chunks": [76, 320, 31390],
+      "attrs": {
+        "long_name": "T cell width on East side",
+        "units": "m"
+      }
+    },
+    "HTN": {
+      "type": "data",
+      "description": "T cell width on North side",
+      "dimensions": ["nj", "ni", "time"],
+      "unit": "m",
+      "shape": [76, 320, 31390],
+      "chunks": [76, 320, 31390],
+      "attrs": {
+        "long_name": "T cell width on North side",
+        "units": "m"
+      }
+    },
+    "TLAT": {
+      "type": "data",
+      "description": "T grid center latitude",
+      "dimensions": ["nj", "ni", "time"],
+      "unit": "degrees_north",
+      "shape": [76, 320, 31390],
+      "chunks": [76, 320, 31390],
+      "attrs": {
+        "bounds": "latt_bounds",
+        "long_name": "T grid center latitude",
+        "units": "degrees_north"
+      }
+    },
+    "TLON": {
+      "type": "data",
+      "description": "T grid center longitude",
+      "dimensions": ["nj", "ni", "time"],
+      "unit": "degrees_east",
+      "shape": [76, 320, 31390],
+      "chunks": [76, 320, 31390],
+      "attrs": {
+        "bounds": "lont_bounds",
+        "long_name": "T grid center longitude",
+        "units": "degrees_east"
+      }
+    },
+    "ULAT": {
+      "type": "data",
+      "description": "U grid center latitude",
+      "dimensions": ["nj", "ni", "time"],
+      "unit": "degrees_north",
+      "shape": [76, 320, 31390],
+      "chunks": [76, 320, 31390],
+      "attrs": {
+        "bounds": "latu_bounds",
+        "comment": "Latitude of NE corner of T grid cell",
+        "long_name": "U grid center latitude",
+        "units": "degrees_north"
+      }
+    },
+    "ULON": {
+      "type": "data",
+      "description": "U grid center longitude",
+      "dimensions": ["nj", "ni", "time"],
+      "unit": "degrees_east",
+      "shape": [76, 320, 31390],
+      "chunks": [76, 320, 31390],
+      "attrs": {
+        "bounds": "lonu_bounds",
+        "long_name": "U grid center longitude",
+        "units": "degrees_east"
+      }
+    },
+    "blkmask": {
+      "type": "data",
+      "description": "blockid of T grid cells",
+      "dimensions": ["nj", "ni", "time"],
+      "unit": "unitless",
+      "shape": [76, 320, 31390],
+      "chunks": [76, 320, 31390],
+      "attrs": {
+        "long_name": "blockid of T grid cells",
+        "units": "unitless"
+      }
+    },
+    "dxt": {
+      "type": "data",
+      "description": "T cell width through middle",
+      "dimensions": ["nj", "ni", "time"],
+      "unit": "m",
+      "shape": [76, 320, 31390],
+      "chunks": [76, 320, 31390],
+      "attrs": {
+        "long_name": "T cell width through middle",
+        "units": "m"
+      }
+    },
+    "dxu": {
+      "type": "data",
+      "description": "U cell width through middle",
+      "dimensions": ["nj", "ni", "time"],
+      "unit": "m",
+      "shape": [76, 320, 31390],
+      "chunks": [76, 320, 31390],
+      "attrs": {
+        "long_name": "U cell width through middle",
+        "units": "m"
+      }
+    },
+    "dyt": {
+      "type": "data",
+      "description": "T cell height through middle",
+      "dimensions": ["nj", "ni", "time"],
+      "unit": "m",
+      "shape": [76, 320, 31390],
+      "chunks": [76, 320, 31390],
+      "attrs": {
+        "long_name": "T cell height through middle",
+        "units": "m"
+      }
+    },
+    "dyu": {
+      "type": "data",
+      "description": "U cell height through middle",
+      "dimensions": ["nj", "ni", "time"],
+      "unit": "m",
+      "shape": [76, 320, 31390],
+      "chunks": [76, 320, 31390],
+      "attrs": {
+        "long_name": "U cell height through middle",
+        "units": "m"
+      }
+    },
+    "hi_d": {
+      "type": "data",
+      "description": "grid cell mean ice thickness",
+      "dimensions": ["member_id", "time", "nj", "ni"],
+      "unit": "m",
+      "shape": [39, 31390, 76, 320],
+      "chunks": [2, 730, 76, 320],
+      "attrs": {
+        "cell_measures": "area: tarea",
+        "cell_methods": "time: mean",
+        "comment": "ice volume per unit grid cell area",
+        "long_name": "grid cell mean ice thickness",
+        "time_rep": "averaged",
+        "units": "m"
+      }
+    },
+    "latt_bounds": {
+      "type": "data",
+      "description": "latitude boundaries of T cells",
+      "dimensions": ["nj", "ni", "nvertices", "time"],
+      "unit": "degrees_north",
+      "shape": [76, 320, 4, 31390],
+      "chunks": [76, 320, 4, 31390],
+      "attrs": {
+        "long_name": "latitude boundaries of T cells",
+        "units": "degrees_north"
+      }
+    },
+    "latu_bounds": {
+      "type": "data",
+      "description": "latitude boundaries of U cells",
+      "dimensions": ["nj", "ni", "nvertices", "time"],
+      "unit": "degrees_north",
+      "shape": [76, 320, 4, 31390],
+      "chunks": [76, 320, 4, 31390],
+      "attrs": {
+        "long_name": "latitude boundaries of U cells",
+        "units": "degrees_north"
+      }
+    },
+    "lont_bounds": {
+      "type": "data",
+      "description": "longitude boundaries of T cells",
+      "dimensions": ["nj", "ni", "nvertices", "time"],
+      "unit": "degrees_east",
+      "shape": [76, 320, 4, 31390],
+      "chunks": [76, 320, 4, 31390],
+      "attrs": {
+        "long_name": "longitude boundaries of T cells",
+        "units": "degrees_east"
+      }
+    },
+    "lonu_bounds": {
+      "type": "data",
+      "description": "longitude boundaries of U cells",
+      "dimensions": ["nj", "ni", "nvertices", "time"],
+      "unit": "degrees_east",
+      "shape": [76, 320, 4, 31390],
+      "chunks": [76, 320, 4, 31390],
+      "attrs": {
+        "long_name": "longitude boundaries of U cells",
+        "units": "degrees_east"
+      }
+    },
+    "tarea": {
+      "type": "data",
+      "description": "area of T grid cells",
+      "dimensions": ["nj", "ni", "time"],
+      "unit": "m^2",
+      "shape": [76, 320, 31390],
+      "chunks": [76, 320, 31390],
+      "attrs": {
+        "long_name": "area of T grid cells",
+        "units": "m^2"
+      }
+    },
+    "time_bounds": {
+      "type": "data",
+      "description": "boundaries for time-averaging interval",
+      "dimensions": ["time", "d2"],
+      "shape": [31390, 2],
+      "chunks": [31390, 2],
+      "attrs": {
+        "long_name": "boundaries for time-averaging interval"
+      }
+    },
+    "tmask": {
+      "type": "data",
+      "description": "mask of T grid cells",
+      "dimensions": ["nj", "ni", "time"],
+      "unit": "unitless",
+      "shape": [76, 320, 31390],
+      "chunks": [76, 320, 31390],
+      "attrs": {
+        "long_name": "mask of T grid cells",
+        "units": "unitless"
+      }
+    },
+    "uarea": {
+      "type": "data",
+      "description": "area of U grid cells",
+      "dimensions": ["nj", "ni", "time"],
+      "unit": "m^2",
+      "shape": [76, 320, 31390],
+      "chunks": [76, 320, 31390],
+      "attrs": {
+        "long_name": "area of U grid cells",
+        "units": "m^2"
+      }
+    }
+  },
+  "providers": [
+    {
+      "name": "National Center for Atmospheric Research (NCAR)",
+      "roles": ["producer", "licensor", "processor"],
+      "url": "https://www.cesm.ucar.edu/projects/community-projects/LENS2/"
+    }
+  ],
+  "assets": {
+    "zarr-ncar-stratus-s3": {
+      "href": "s3://ncar-cesm-lens/ice_sh/daily/cesmLE-20C-hi_d.zarr",
+      "type": "application/vnd+zarr",
+      "xarray:open_kwargs": {
+        "use_cftime": true,
+        "consolidated": true
+      },
+      "roles": ["data", "zarr", "ncar-stratus-s3"]
+    }
+  },
+  "stac_collections": [
+    "https://stac-extensions.github.io/datacube/v1.0.0/schema.json"
+  ],
+  "extent": {
+    "spatial": {
+      "bbox": [[-180, -90, 180, 90]]
+    },
+    "temporal": {
+      "interval": [["1920-01-02T00:00:00Z", "2006-01-01T00:00:00Z"]]
+    }
+  },
+  "license": "CC0-1.0"
+}

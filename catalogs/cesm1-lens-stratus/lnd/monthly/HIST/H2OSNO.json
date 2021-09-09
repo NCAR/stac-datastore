@@ -1,0 +1,90 @@
+{
+  "type": "Collection",
+  "id": "CESM1LE-lnd-HIST-monthly-H2OSNO",
+  "stac_version": "1.0.0",
+  "description": "CESM1 Large Ensemble dataset",
+  "links": [
+    {
+      "rel": "RelType.ROOT",
+      "href": "../catalog.json",
+      "type": "MediaType.JSON"
+    },
+    {
+      "rel": "license",
+      "href": "https://www.cesm.ucar.edu/models/cesm2/copyright.html",
+      "type": "text/html",
+      "title": "CESM2 Copyright & Terms of Use"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v1.0.0/schema.json"
+  ],
+  "cube:dimensions": {
+    "time": {
+      "type": "temporal",
+      "description": "time",
+      "extent": ["1850-01-16T12:00:00Z", "1919-12-16T12:00:00Z"]
+    }
+  },
+  "cube:variables": {
+    "H2OSNO": {
+      "type": "data",
+      "description": "snow depth (liquid water)",
+      "dimensions": ["time", "lat", "lon"],
+      "unit": "mm",
+      "shape": [840, 192, 288],
+      "chunks": [600, 192, 288],
+      "attrs": {
+        "cell_methods": "time: mean",
+        "long_name": "snow depth (liquid water)",
+        "units": "mm"
+      }
+    },
+    "member_id": {
+      "type": "auxiliary",
+      "dimensions": [],
+      "shape": [],
+      "attrs": {}
+    },
+    "time_bounds": {
+      "type": "auxiliary",
+      "description": "history time interval endpoints",
+      "dimensions": ["time", "hist_interval"],
+      "shape": [840, 2],
+      "chunks": [840, 2],
+      "attrs": {
+        "long_name": "history time interval endpoints"
+      }
+    }
+  },
+  "providers": [
+    {
+      "name": "National Center for Atmospheric Research (NCAR)",
+      "roles": ["producer", "licensor", "processor"],
+      "url": "https://www.cesm.ucar.edu/projects/community-projects/LENS2/"
+    }
+  ],
+  "assets": {
+    "zarr-ncar-stratus-s3": {
+      "href": "s3://ncar-cesm-lens/lnd/monthly/cesmLE-HIST-H2OSNO.zarr",
+      "type": "application/vnd+zarr",
+      "xarray:open_kwargs": {
+        "use_cftime": true,
+        "consolidated": true
+      },
+      "roles": ["data", "zarr", "ncar-stratus-s3"]
+    }
+  },
+  "stac_collections": [
+    "https://stac-extensions.github.io/datacube/v1.0.0/schema.json"
+  ],
+  "extent": {
+    "spatial": {
+      "bbox": [[-180, -90, 180, 90]]
+    },
+    "temporal": {
+      "interval": [["1850-01-16T12:00:00Z", "1919-12-16T12:00:00Z"]]
+    }
+  },
+  "license": "CC0-1.0"
+}

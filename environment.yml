@@ -16,6 +16,7 @@ dependencies:
   - python=3.9
   - xarray
   - zarr
+  - s3fs
   - pip:
       - git+https://github.com/TomAugspurger/xstac
       - git+https://github.com/aulemahal/xarray.git@calendar-utils

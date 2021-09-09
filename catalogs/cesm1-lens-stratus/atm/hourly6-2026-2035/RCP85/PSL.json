@@ -1,0 +1,83 @@
+{
+  "type": "Collection",
+  "id": "CESM1LE-atm-RCP85-hourly6-2026-2035-PSL",
+  "stac_version": "1.0.0",
+  "description": "CESM1 Large Ensemble dataset",
+  "links": [
+    {
+      "rel": "RelType.ROOT",
+      "href": "../catalog.json",
+      "type": "MediaType.JSON"
+    },
+    {
+      "rel": "license",
+      "href": "https://www.cesm.ucar.edu/models/cesm2/copyright.html",
+      "type": "text/html",
+      "title": "CESM2 Copyright & Terms of Use"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v1.0.0/schema.json"
+  ],
+  "cube:dimensions": {
+    "time": {
+      "type": "temporal",
+      "description": "time",
+      "extent": ["2026-01-01T00:00:00Z", "2036-01-01T00:00:00Z"]
+    }
+  },
+  "cube:variables": {
+    "PSL": {
+      "type": "data",
+      "description": "Sea level pressure",
+      "dimensions": ["member_id", "time", "lat", "lon"],
+      "unit": "Pa",
+      "shape": [40, 14601, 192, 288],
+      "chunks": [1, 576, 192, 288],
+      "attrs": {
+        "long_name": "Sea level pressure",
+        "units": "Pa"
+      }
+    },
+    "time_bnds": {
+      "type": "auxiliary",
+      "description": "time interval endpoints",
+      "dimensions": ["time", "nbnd"],
+      "shape": [14601, 2],
+      "chunks": [14601, 2],
+      "attrs": {
+        "long_name": "time interval endpoints"
+      }
+    }
+  },
+  "providers": [
+    {
+      "name": "National Center for Atmospheric Research (NCAR)",
+      "roles": ["producer", "licensor", "processor"],
+      "url": "https://www.cesm.ucar.edu/projects/community-projects/LENS2/"
+    }
+  ],
+  "assets": {
+    "zarr-ncar-stratus-s3": {
+      "href": "s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-PSL.zarr",
+      "type": "application/vnd+zarr",
+      "xarray:open_kwargs": {
+        "use_cftime": true,
+        "consolidated": true
+      },
+      "roles": ["data", "zarr", "ncar-stratus-s3"]
+    }
+  },
+  "stac_collections": [
+    "https://stac-extensions.github.io/datacube/v1.0.0/schema.json"
+  ],
+  "extent": {
+    "spatial": {
+      "bbox": [[-180, -90, 180, 90]]
+    },
+    "temporal": {
+      "interval": [["2026-01-01T00:00:00Z", "2036-01-01T00:00:00Z"]]
+    }
+  },
+  "license": "CC0-1.0"
+}

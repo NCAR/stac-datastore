@@ -1,0 +1,84 @@
+{
+  "type": "Collection",
+  "id": "CESM1LE-lnd-RCP85-monthly-SOILWATER_10CM",
+  "stac_version": "1.0.0",
+  "description": "CESM1 Large Ensemble dataset",
+  "links": [
+    {
+      "rel": "RelType.ROOT",
+      "href": "../catalog.json",
+      "type": "MediaType.JSON"
+    },
+    {
+      "rel": "license",
+      "href": "https://www.cesm.ucar.edu/models/cesm2/copyright.html",
+      "type": "text/html",
+      "title": "CESM2 Copyright & Terms of Use"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v1.0.0/schema.json"
+  ],
+  "cube:dimensions": {
+    "time": {
+      "type": "temporal",
+      "description": "time",
+      "extent": ["2006-01-16T12:00:00Z", "2100-12-16T12:00:00Z"]
+    }
+  },
+  "cube:variables": {
+    "SOILWATER_10CM": {
+      "type": "data",
+      "description": "soil liquid water + ice in top 10cm of soil (veg landunits only)",
+      "dimensions": ["member_id", "time", "lat", "lon"],
+      "unit": "kg/m2",
+      "shape": [40, 1140, 192, 288],
+      "chunks": [1, 600, 192, 288],
+      "attrs": {
+        "cell_methods": "time: mean",
+        "long_name": "soil liquid water + ice in top 10cm of soil (veg landunits only)",
+        "units": "kg/m2"
+      }
+    },
+    "time_bounds": {
+      "type": "auxiliary",
+      "description": "history time interval endpoints",
+      "dimensions": ["time", "hist_interval"],
+      "shape": [1140, 2],
+      "chunks": [1140, 2],
+      "attrs": {
+        "long_name": "history time interval endpoints"
+      }
+    }
+  },
+  "providers": [
+    {
+      "name": "National Center for Atmospheric Research (NCAR)",
+      "roles": ["producer", "licensor", "processor"],
+      "url": "https://www.cesm.ucar.edu/projects/community-projects/LENS2/"
+    }
+  ],
+  "assets": {
+    "zarr-ncar-stratus-s3": {
+      "href": "s3://ncar-cesm-lens/lnd/monthly/cesmLE-RCP85-SOILWATER_10CM.zarr",
+      "type": "application/vnd+zarr",
+      "xarray:open_kwargs": {
+        "use_cftime": true,
+        "consolidated": true
+      },
+      "roles": ["data", "zarr", "ncar-stratus-s3"]
+    }
+  },
+  "stac_collections": [
+    "https://stac-extensions.github.io/datacube/v1.0.0/schema.json"
+  ],
+  "extent": {
+    "spatial": {
+      "bbox": [[-180, -90, 180, 90]]
+    },
+    "temporal": {
+      "interval": [["2006-01-16T12:00:00Z", "2100-12-16T12:00:00Z"]]
+    }
+  },
+  "license": "CC0-1.0"
+}
