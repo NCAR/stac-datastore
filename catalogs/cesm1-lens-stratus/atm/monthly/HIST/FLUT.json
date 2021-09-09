@@ -6,14 +6,14 @@
   "links": [
     {
       "rel": "RelType.ROOT",
-      "href": "../catalog.json",
+      "href": "https://raw.githubusercontent.com/NCAR/stac-datastore/main/catalogs/cesm1-lens-stratus/catalog.json",
       "type": "MediaType.JSON"
     },
     {
       "rel": "license",
-      "href": "https://www.cesm.ucar.edu/models/cesm2/copyright.html",
+      "href": "https://www.cesm.ucar.edu/models/cesm1/copyright.html",
       "type": "text/html",
-      "title": "CESM2 Copyright & Terms of Use"
+      "title": "CESM1 Copyright & Terms of Use"
     }
   ],
   "stac_extensions": [
@@ -62,7 +62,13 @@
     {
       "name": "National Center for Atmospheric Research (NCAR)",
       "roles": ["producer", "licensor", "processor"],
-      "url": "https://www.cesm.ucar.edu/projects/community-projects/LENS2/"
+      "url": "https://www.cesm.ucar.edu/projects/community-projects/LENS1/"
+    },
+    {
+      "name": "GitHub",
+      "description": "This catalog is hosted in the [stac-datastore](https://github.com/NCAR/stac-datastore) repository on GitHub",
+      "roles": ["host"],
+      "url": "https://github.com"
     }
   ],
   "assets": {

@@ -2,9 +2,23 @@
   "stac_version": "1.0.0",
   "stac_extensions": [],
   "type": "Catalog",
-  "id": "CESM1-large-ensemble",
-  "title": "CESM1-LE",
-  "description": "STAC catalog for CESM1-LE data stored in NCAR stratus object storage",
+  "id": "CESM1-le-catalog",
+  "title": "CESM1-LE Catalog",
+  "keywords": ["NCAR", "ARCO", "Zarr", "Stratus Object Storage", "CESM"],
+  "description": "STAC catalog for CESM1-LE data stored in NCAR Stratus object storage",
+  "providers": [
+    {
+      "name": "National Center for Atmospheric Research (NCAR)",
+      "roles": ["producer", "licensor", "processor"],
+      "url": "https://www.cesm.ucar.edu/projects/community-projects/LENS1/"
+    },
+    {
+      "name": "GitHub",
+      "roles": ["host"],
+      "description": "This catalog is hosted in the [stac-datastore](https://github.com/NCAR/stac-datastore) repository on GitHub",
+      "url": "https://github.com"
+    }
+  ],
   "links": [
     {
       "href": "catalog.json",
@@ -12,10 +26,10 @@
       "type": "application/json"
     },
     {
-      "href": "https://www.cesm.ucar.edu/models/cesm2/copyright.html",
+      "href": "https://www.cesm.ucar.edu/models/cesm1/copyright.html",
       "type": "text/html",
       "rel": "license",
-      "title": "CESM2 Copyright & Terms of Use"
+      "title": "CESM1 Copyright & Terms of Use"
     },
     {
       "href": "atm/daily/20C/FLNS.json",
