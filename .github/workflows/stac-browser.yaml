@@ -4,9 +4,9 @@ name: STAC-Browser
 on: workflow_dispatch
 
 env:
-  CATALOG_URL: 'https://raw.githubusercontent.com/${{ github.repository }}/main/catalogs/cesm1-lens-stratus/catalog.json'
-  TILE_SOURCE_TEMPLATE: 'https://api.cogeo.xyz/cog/tiles/{z}/{x}/{y}?url={ASSET_HREF}&expression=sqrt(b1)&rescale=0,1'
-  PATH_PREFIX: '/${{ github.event.repository.name }}/'
+  CATALOG_URL: "https://raw.githubusercontent.com/${{ github.repository }}/main/catalogs/cesm1-lens-stratus/catalog.json"
+  TILE_SOURCE_TEMPLATE: "https://api.cogeo.xyz/cog/tiles/{z}/{x}/{y}?url={ASSET_HREF}&expression=sqrt(b1)&rescale=0,1"
+  PATH_PREFIX: "/${{ github.event.repository.name }}/"
 
 jobs:
   build-and-deploy:
